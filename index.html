@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ardan — Tech Explorer &amp; Student at PENS</title>
+    <title>Ardan · Tech Explorer &amp; Student at PENS</title>
     <link rel="stylesheet" href="style.css">
     
-    <!-- Google Fonts: Inter (400, 500, 600, 700, 800) & Anton -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navbar Sticky Modern -->
     <header class="navbar-container">
         <nav class="navbar">
             <a href="#hero" class="brand">Ardan<span class="brand-dot">.</span></a>
@@ -27,7 +24,6 @@
                 <li><a href="#projects">Karya</a></li>
                 <li><a href="#contact">Kontak</a></li>
 
-                <!-- Social Icons -->
                 <li class="nav-icon">
                     <a href="https://github.com/ardanchaesani11-rgb" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
@@ -48,13 +44,10 @@
     </header>
 
     <main>
-        <!-- Bagian HERO (Editorial 3D Style) -->
-        <section id="hero" class="hero-section hero-modern">
-            <!-- Gelembung Blur Dinamis -->
+        <section id="hero" class="hero-section">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
 
-            <!-- Floating Pill Badge Intro -->
             <div class="hero-intro-badge">
                 <span class="wave-emoji">👋</span>
                 <span class="badge-text">Halo, Saya <strong>Ardan</strong></span>
@@ -66,16 +59,13 @@
             </div>
 
             <div class="hero-visual-wrapper">
-                <!-- Layer 1: Belakang Foto (Satu-satunya H1 semantik untuk SEO & Screen Reader) -->
                 <div class="hero-big-text layer-back">
                     <h1 class="text-black">TECH EXPLORER</h1>
                     <h1 class="text-placeholder">&amp; STUDENT AT PENS</h1>
                 </div>
 
-                <!-- Layer 2: Foto Lokal di Tengah -->
                 <img src="ardan.png" alt="Foto Ardan - Mahasiswa PENS & Tech Explorer" class="hero-person-img">
 
-                <!-- Layer 3: Depan Foto (Elemen Dekorasi Outline Stroke, di-hide dari Screen Reader) -->
                 <div class="hero-big-text layer-front" aria-hidden="true">
                     <span class="text-stroke text-white-stroke">TECH EXPLORER</span>
                     <span class="text-stroke text-dark-stroke">&amp; STUDENT AT PENS</span>
@@ -90,20 +80,20 @@
             </div>
         </section>
 
-        <!-- Bagian KEAHLIAN / TECH STACK -->
         <section id="skills" class="container skills-section">
             <div class="skills-wrapper">
-                <span class="skills-label">TECH STACK &amp; ALAT</span>
+                <span class="skills-label">TECH STACK &amp; TOOLKIT</span>
                 <div class="skills-list">
                     <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
                     <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                     <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
                     <span class="skill-tag"><i class="fa-solid fa-microchip"></i> IoT &amp; Hardware</span>
+                    <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Computer Network</span>
+                    <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
                 </div>
             </div>
         </section>
 
-        <!-- Bagian PROYEK / KARYA PILIHAN -->
         <section id="projects" class="container section-padding">
             <div class="section-title-group">
                 <span class="section-subtitle">PORTOFOLIO</span>
@@ -112,70 +102,75 @@
             
             <div class="project-grid">
                 <article class="project-card">
-                    <div class="card-image placeholder-1">
-                        <span>Gambar Proyek 1</span>
+                    <div class="card-image">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span class="placeholder-badge">IoT / Hardware</span>
                     </div>
                     <div class="card-content">
                         <div class="card-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">UI/UX</span>
-                        </div>
-                        <h3>Smart Campus Portal</h3>
-                        <p>Platform terintegrasi untuk monitoring aktivitas mahasiswa dan manajemen tugas berbasis web responsif.</p>
-                        <a href="#contact" class="card-link">Lihat Detail <span>→</span></a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="card-image placeholder-2">
-                        <span>Gambar Proyek 2</span>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">IoT &amp; Sensor</span>
+                            <span class="tag">Embedded</span>
                             <span class="tag">Python</span>
+                            <span class="tag">ESP32</span>
                         </div>
-                        <h3>Automated Monitoring System</h3>
-                        <p>Sistem pemantauan lingkungan berbasis sensor mikrokontroler dengan visualisasi dashboard real-time.</p>
-                        <a href="#contact" class="card-link">Lihat Detail <span>→</span></a>
+                        <h3>Smart Environmental Monitor</h3>
+                        <p>Sistem pemantauan parameter lingkungan real-time dengan mikrokontroler, transmisi protokol IoT, dan dashboard visual.</p>
+                        <a href="#contact" class="card-link">Lihat Detail <span>&rarr;</span></a>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="card-image placeholder-3">
-                        <span>Gambar Proyek 3</span>
+                    <div class="card-image">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span class="placeholder-badge">Networking</span>
                     </div>
                     <div class="card-content">
                         <div class="card-tags">
-                            <span class="tag">Data Analysis</span>
-                            <span class="tag">Dashboard</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">GNS3</span>
                         </div>
-                        <h3>Interactive Analytics Tool</h3>
-                        <p>Aplikasi web interaktif untuk visualisasi data metrik dengan performa tinggi dan desain minimalis.</p>
-                        <a href="#contact" class="card-link">Lihat Detail <span>→</span></a>
+                        <h3>Network Topology Automation</h3>
+                        <p>Otomasi konfigurasi router dan switch virtual serta pengujian routing dinamis secara otomatis berbasis CLI.</p>
+                        <a href="#contact" class="card-link">Lihat Detail <span>&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span class="placeholder-badge">Web Development</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">Modern CSS</span>
+                        </div>
+                        <h3>Personal Tech Portfolio</h3>
+                        <p>Situs portofolio yang cepat, efisien, dan responsif dengan tipografi tegas serta tata letak berbasis kotak yang bersih.</p>
+                        <a href="#contact" class="card-link">Lihat Detail <span>&rarr;</span></a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <!-- Bagian FOOTER -->
     <footer id="contact" class="footer-wrapper">
         <div class="container section-padding footer-section">
             <span class="section-subtitle">HUBUNGI SAYA</span>
-            <h2>Mari Ngobrol Santai</h2>
+            <h2>Let's Share Ideas</h2>
             <p>Punya ide proyek menarik, tawaran kolaborasi, atau sekadar ingin menyapa? Pintu saya selalu terbuka.</p>
             
             <div class="footer-cta">
-                <a href="mailto:emailanda@contoh.com" class="btn btn-primary">Kirim Email Langsung</a>
+                <a href="mailto:ardanchaesani11@gmail.com" class="btn btn-primary">Kirim Email Langsung</a>
             </div>
 
             <div class="footer-social-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/ardanchaesani11-rgb" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <span class="dot-separator">•</span>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <span class="dot-separator">•</span>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://instagram.com/ardan.cz?stkn=MTZueThqMmRpamdyaw==" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
             
             <div class="copyright">
